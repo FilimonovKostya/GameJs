@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a3b409ce-c2ce-4885-b6d6-9b3baa97d5d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +36,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../duplicateGame" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -51,7 +51,8 @@
       <workItem from="1600108584377" duration="1579000" />
       <workItem from="1600117237497" duration="2012000" />
       <workItem from="1600151669230" duration="1099000" />
-      <workItem from="1600155247418" duration="967000" />
+      <workItem from="1600155247418" duration="3125000" />
+      <workItem from="1600168149442" duration="668000" />
     </task>
     <servers />
   </component>
@@ -63,6 +64,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="583" y="49" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1600117315909" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1600158703428">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1600158703428" />
     <state x="368" y="93" key="MergeDialog" timestamp="1600118338122">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
