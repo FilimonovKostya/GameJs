@@ -16,6 +16,7 @@ function startGame(){
 
 function handlerBoxClick(event){
     if(event.target.dataset){ //если кликнули по квадрату то вызовется опять функция renderBox(). Dataset отлавливает какие-то атрибуты
+        console.log(event.target.dataset)//чекае атритут квадрата ,есть ли он в этом окне
         score++
         renderBox()
 
@@ -26,11 +27,17 @@ function handlerBoxClick(event){
 function renderBox(){
      $game.innerHTML = '' // ощищаем значение при вызове функции
     let box = document.createElement('div') // создаем div
+    let boxSize = getRandom(20,100)
+    let gameSize = $game.getBoundingClientRect() // данна функция получает доступ к нашему окну  game  и там уже известна ширина и высота
+    let maxTop = gameSize.height - boxSize // получаем отклонения по высоте квадрата
+    let maxLeft = gameSize.width - boxSize // по ширине
+
+
 
     //стили для квадрата
-    box.style.top = '50px'
-    box.style.left = '70px'
-    box.style.height = box.style.width = '50px'
+    box.style.top = getRandom(0, maxTop) + 'px'
+    box.style.left = getRandom(0, maxLeft) + 'px'
+    box.style.height = box.style.width = boxSize + 'px' //  в boxsize сидит число,каждый раз при вызове функции оно меняется
     box.style.position = 'absolute'
     box.style.backgroundColor = 'lightgreen'
     box.style.cursor = 'pointer'
@@ -40,4 +47,9 @@ function renderBox(){
     $game.insertAdjacentElement('afterbegin', box)//  добавляет переданный элемент в DOM-дерево относительно элемента, вызвавшего метод - afterbegin кладем после game -->
     // появится окно --> затем квадрат
 
+}
+
+//создали генерацию случайных чисел в диапозоне
+function getRandom(min,max){
+    return Math.floor(Math.random() * (max - min) + min)
 }

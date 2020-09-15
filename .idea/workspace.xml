@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3b409ce-c2ce-4885-b6d6-9b3baa97d5d8" name="Default Changelist" comment="" />
+    <list default="true" id="a3b409ce-c2ce-4885-b6d6-9b3baa97d5d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +19,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dd520e97f58ce317b500e20b257d8336722a28cf" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hVosfcnxOvfFpLMbhE6IdpvtBG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,10 +49,27 @@
       <updated>1600105829915</updated>
       <workItem from="1600105831404" duration="425000" />
       <workItem from="1600108584377" duration="1579000" />
+      <workItem from="1600117237497" duration="2012000" />
+      <workItem from="1600151669230" duration="1099000" />
+      <workItem from="1600155247418" duration="967000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="583" y="49" key="CommitChangelistDialog2" timestamp="1600117315909">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="583" y="49" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1600117315909" />
+    <state x="368" y="93" key="MergeDialog" timestamp="1600118338122">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="368" y="93" key="MergeDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1600118338122" />
+    <state x="983" y="174" key="git4idea.branch.GitSmartOperationDialog" timestamp="1600118328029">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="983" y="174" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1600118328029" />
   </component>
 </project>

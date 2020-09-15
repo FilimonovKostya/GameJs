@@ -1,0 +1,46 @@
+Index: index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//используем доллар так как берем элемент из DOM\r\nlet $start = document.querySelector('#start')\r\n$start.addEventListener('click',startGame)\r\n\r\nlet $game = document.querySelector('#game')\r\n\r\n\r\nfunction startGame(){\r\n    $game.style.backgroundColor = '#fff' // меняем стиль блока на белый цвет при вызове функции\r\n    $start.classList.add('hide') //добвлям для кнопки Css class , который указали уже в самом CSS\r\n}\r\n\r\n//функция которая будет генерировать случайные квадраты\r\nfunction renderBox(){\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.js	(revision 7a4acd2436241782133ac9f8c019dec605739865)
++++ index.js	(date 1600118319858)
+@@ -3,14 +3,35 @@
+ $start.addEventListener('click',startGame)
+ 
+ let $game = document.querySelector('#game')
++$game.addEventListener('click', handlerBoxClick)
++
++let score = 0
+ 
++function handlerBoxClick(event){
++    if($game.target.dataset) {
++        score++
++        renderBox()
++
++    }
++}
+ 
+ function startGame(){
+     $game.style.backgroundColor = '#fff' // меняем стиль блока на белый цвет при вызове функции
+     $start.classList.add('hide') //добвлям для кнопки Css class , который указали уже в самом CSS
++
++    renderBox()
+ }
+ 
+ //функция которая будет генерировать случайные квадраты
+ function renderBox(){
++    let box = document.createElement('div')
+ 
++    box.style.width = box.style.height = '50px'
++    box.style.backgroundColor = 'blue'
++    box.style.top = '50px'
++    box.style.left = '70px'
++    box.style.cursor = 'pointer'
++
++    box.setAttribute('data-box', true)
++    $game.insertAdjacentElement('afterbegin', box)
+ }
+\ No newline at end of file
