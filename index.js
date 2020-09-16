@@ -5,16 +5,37 @@ $start.addEventListener('click', startGame)//что будет делать фу
 let $game = document.querySelector('#game')//пустая дивка где происходит игра
 $game.addEventListener('click', handlerBoxClick) // вешаем событие на само ОКНО , не на box , прослушка будет окна , посмотреть про делегированние событий
 
+let $time = document.querySelector('#time')
+
 let score = 0
+let isGameStarted = false
 
 function startGame() {
+    isGameStarted = true
     $game.style.backgroundColor = '#fff' // меняем стиль блока на белый цвет при вызове функции
     $start.classList.add('hide') //добвлям для кнопки Css class , который указали уже в самом CSS
+
+    let interval = setInterval(function (){
+        let time = parseFloat($time.textContent)
+        if(time <= 0){
+            clearInterval(interval)
+            endGame()
+        } else{
+            $time.textContent = (time - 0.1).toFixed(1)
+        }
+    }, 100)
 
     renderBox()//вызываем функцию при нажатии на кнопку start чтобы сгенерировались квадратики
 }
 
+function endGame(){
+    isGameStarted = false
+}
+
 function handlerBoxClick(event) {
+    if(!isGameStarted){
+        return 
+    }
     if (event.target.dataset) { //если кликнули по квадрату то вызовется опять функция renderBox(). Dataset отлавливает какие-то атрибуты
         console.log(event.target.dataset)//чекае атритут квадрата ,есть ли он в этом окне
         score++
